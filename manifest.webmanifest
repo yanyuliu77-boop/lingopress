@@ -1,0 +1,10 @@
+{
+  "name": "LingoPress 每日外刊精读",
+  "short_name": "LingoPress",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f1eb",
+  "theme_color": "#f3f1eb",
+  "description": "每日一篇外刊，精读、跟读与复习一站完成。",
+  "icons": []
+}
