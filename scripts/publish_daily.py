@@ -357,7 +357,11 @@ def main() -> None:
         return
     story = choose_story(catalog, today)
     print(f"Selected {story['source']['name']}: {story['title']}")
-    source_text = extract_story(story)
+    try:
+        source_text = extract_story(story)
+    except Exception as exc:
+        print(f"Full article was unavailable; using the public RSS material: {exc}", file=sys.stderr)
+        source_text = f"{story['title']}\n{story['description']}"
     lesson = generate_lesson(story, source_text)
     validate_lesson(lesson)
     article = build_article(catalog, story, lesson, today)
