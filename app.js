@@ -1,67 +1,17 @@
-const article = {
-  title: 'A visit to Yiwu: “Snow” globalisation',
-  paragraphs: [
-    {
-      en: 'YIWU IN EASTERN China is the world’s Christmas capital. The five main districts which contain its wholesale markets, each home to vast commercial buildings, stretch for miles on end. Masses of stalls are, for much of the year, dedicated to Christmas paraphernalia: trees, ornaments, hats, wreaths and candy canes. It hums in the summer months, when jolly fare is readied for elsewhere. By December each year it lies more quiet. The city’s wares will have contributed to China’s record $1trn trade surplus in the first 11 months of 2025.',
-      zh: '中国东部的义乌是世界圣诞之都。其批发市场分布在五个主要区域，每个区域都有大型商业建筑，绵延数英里。一年中的大部分时间里，大量摊位都在售卖圣诞树、装饰品、帽子、花环和拐杖糖。夏季，当这些欢乐的商品为其他地方备货时，这里最为繁忙。到了十二月则安静许多。2025 年前 11 个月，这座城市的商品助力中国创下 1 万亿美元的贸易顺差纪录。',
-      note: '<b>写作观察</b>：以“Christmas capital”快速定位城市，再用空间、季节和宏观数据逐层拉远镜头。'
-    },
-    {
-      en: 'China dominates exports of the world’s Christmas decorations by value; in the recent past America has bought more than half of what China produced. But this year in the ten months to October China exported $5.1bn of the trinkets, down from $5.8bn over the same period in 2024. America has been responsible for all of that decline and more, having imported about $940m less in festive fare from China than it did last year. That is thanks to President Donald Trump’s trade war and his introduction of painful tariffs, which though down from their peak still stand at 20% for Chinese goods.',
-      zh: '按价值计算，中国在全球圣诞装饰品出口中占据主导地位；不久前，美国还购买了中国一半以上的产量。但今年截至十月，中国出口了 51 亿美元的小饰品，低于 2024 年同期的 58 亿美元。美国造成了全部甚至更多的降幅，其从中国进口的节日用品比去年少约 9.4 亿美元。这源于特朗普政府的贸易战和高额关税：尽管已从峰值下降，对中国商品的关税仍为 20%。',
-      note: '<b>长难句</b>：“having imported…” 是现在分词短语作原因状语，解释美国为何应对降幅负责。'
-    },
-    {
-      en: 'The large number of banners, signs and decorations saying “Feliz Navidad” and “Buon Natale” suggests that many merchants are shifting to other markets in response. Data show exports to Germany and the Netherlands are up by 22% and 16%, respectively. And there are more grinchy ways of getting around the American tariffs, too. Dismembering Father Christmas and then shipping his head, limbs and torso to South-East Asia is one such ruse. Reassembling him, relabelling him and selling him on to America thereafter is more jolly.',
-      zh: '大量写着西班牙语和意大利语“圣诞快乐”的横幅、标语和装饰品表明，许多商家正转向其他市场。数据显示，对德国和荷兰的出口分别增长了 22% 和 16%。还有一些更狡黠的方式规避美国关税：把圣诞老人拆开，将头、四肢和躯干运往东南亚，再重新组装、贴标并转售美国。',
-      note: '<b>修辞亮点</b>：“grinchy / jolly” 借用圣诞文化词汇，以幽默反差解释复杂的供应链转移。'
-    },
-    {
-      en: 'Yiwu’s traders are a worldly sort, and not all about Christmas. They converse with visiting buyers from India, the Middle East and Russia. Arabic, Spanish and other tongues can be heard among its stalls. The criticism of Mr Trump in many languages is stinging. “America is crazy these days,” gripes Yang Jie, a local. “We can’t do business with them, it’s just impossible to plan,” she adds. “How can I set prices when I don’t know what the tariff will be when I ship?” asks a vendor in a stall blooming with artificial flowers.',
-      zh: '义乌商人见多识广，并非只做圣诞生意。他们与来自印度、中东和俄罗斯的采购商交谈，摊位间能听到阿拉伯语、西班牙语等多种语言。对特朗普的多语种批评十分尖锐。“美国最近疯了，我们没法和他们做生意，根本没法规划，”当地商人杨洁抱怨道。一位坐在人造花丛中的商贩问：“发货时都不知道关税是多少，我怎么定价？”',
-      note: '<b>词义辨析</b>：“worldly” 在此不是“世俗的”，而是“见多识广、深谙世事的”。'
-    },
-    {
-      en: 'Mr Trump is not the only problem. “The war in Ukraine has really been a headache for us,” says Wu Yunqing, a car-parts seller. Demand has dropped in Russia, and he has lost touch with customers in Ukraine. A woman selling shirts does business across the Middle East. The flare-up between Israel and Iran made her very nervous, she says.',
-      zh: '特朗普并非唯一的问题。汽车零部件销售商吴云清说：“乌克兰战争真的让我们头疼。”俄罗斯需求下降，他也与乌克兰客户失去了联系。一位卖衬衫的女士在中东各地做生意；她说，以色列与伊朗之间冲突加剧，让她非常紧张。',
-      note: '<b>段落作用</b>：用“not the only problem”承上启下，将风险从关税扩展到全球地缘冲突。'
-    },
-    {
-      en: 'Yet the mood still twinkles. Many have their eyes on the next round of orders. The city’s merchants make decorations for festivals Christian, Muslim and more. Ms Yang has just finished sending the last few shipments of decorations for Ramadan in February. What next? Chinese New Year, of course.',
-      zh: '然而，人们的情绪依然明亮。许多人已把目光投向下一轮订单。这座城市的商人为基督教、伊斯兰教等各种节日制作装饰品。杨女士刚刚发完二月斋月装饰品的最后几批货。接下来呢？当然是中国新年。',
-      note: '<b>结尾技巧</b>：“twinkles” 呼应圣诞灯饰；一问一答收束全文，强调义乌持续转向下一笔生意的韧性。'
-    }
-  ]
-};
+const catalog = window.LINGOPRESS_DATA || { articles: [] };
+const publicationTime = Date.now();
+const publishedArticles = catalog.articles
+  .filter(item => new Date(item.publishAt).getTime() <= publicationTime)
+  .sort((a, b) => new Date(b.publishAt) - new Date(a.publishAt));
 
-const dictionary = {
-  wholesale: { phonetic: '/ˈhəʊlseɪl/', meaning: 'adj. 批发的；大规模的', example: 'Yiwu is famous for its wholesale markets.' },
-  paraphernalia: { phonetic: '/ˌpærəfəˈneɪliə/', meaning: 'n. （某活动所需的）全套用品', example: 'The stalls are dedicated to Christmas paraphernalia.' },
-  ornaments: { phonetic: '/ˈɔːnəmənts/', meaning: 'n. 装饰品；点缀', example: 'The shop sells glass ornaments.' },
-  wreaths: { phonetic: '/riːðz/', meaning: 'n. 花环；花圈', example: 'Wreaths hung on every front door.' },
-  surplus: { phonetic: '/ˈsɜːpləs/', meaning: 'n. 顺差；剩余', example: 'China recorded a large trade surplus.' },
-  dominates: { phonetic: '/ˈdɒmɪneɪts/', meaning: 'v. 占主导地位；支配', example: 'One country dominates the market.' },
-  trinkets: { phonetic: '/ˈtrɪŋkɪts/', meaning: 'n. 小饰品；小玩意', example: 'Tourists bought colourful trinkets.' },
-  tariffs: { phonetic: '/ˈtærɪfs/', meaning: 'n. 关税', example: 'The government imposed tariffs on imports.' },
-  merchants: { phonetic: '/ˈmɜːtʃənts/', meaning: 'n. 商人；批发商', example: 'Merchants quickly found new buyers.' },
-  'get around': { phonetic: '/ɡet əˈraʊnd/', meaning: 'phr. 绕过；规避', example: 'They found ways to get around the tariffs.' },
-  ruse: { phonetic: '/ruːz/', meaning: 'n. 计策；诡计', example: 'The relabelling was a clever ruse.' },
-  worldly: { phonetic: '/ˈwɜːldli/', meaning: 'adj. 见多识广的；善于处世的', example: 'Yiwu’s traders are a worldly sort.' },
-  stinging: { phonetic: '/ˈstɪŋɪŋ/', meaning: 'adj. 尖锐的；尖刻的', example: 'The criticism was stinging.' },
-  'flare-up': { phonetic: '/ˈfleər ʌp/', meaning: 'n. 突发；加剧', example: 'A flare-up of violence hurt trade.' },
-  twinkles: { phonetic: '/ˈtwɪŋklz/', meaning: 'v. 闪烁；焕发光彩', example: 'Yet the mood still twinkles.' }
-};
-
-const quizzes = [
-  { q: '美国市场对中国圣诞饰品出口下降造成了什么影响？', options: ['减少约 9.4 亿美元', '德国市场下降 22%', '关税回到零'], answer: 0 },
-  { q: '文中“拆解圣诞老人”的例子主要说明什么？', options: ['产品质量出现问题', '供应链被重组以规避关税', '东南亚只生产玩具'], answer: 1 },
-  { q: '作者为何用“Yet the mood still twinkles”开启末段？', options: ['批评商家过度乐观', '强调圣诞灯卖得最好', '转折并突出商家的韧性'], answer: 2 }
-];
+let article = publishedArticles[0] || catalog.articles[0];
+let dictionary = article?.dictionary || {};
+let quizzes = article?.quizzes || [];
 
 const state = {
   mode: 'focus', speed: 1, speechIndex: 0, speaking: false,
   words: JSON.parse(localStorage.getItem('lingopress-words') || '[]'),
-  notes: localStorage.getItem('lingopress-notes') || ''
+  notes: article ? localStorage.getItem(`lingopress-notes-${article.id}`) || '' : ''
 };
 
 const licenseHashes = new Set([
@@ -80,6 +30,91 @@ const licenseHashes = new Set([
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const escapeRegex = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+
+function articleWordCount(item = article) {
+  return item.paragraphs.reduce((total, paragraph) => total + paragraph.en.trim().split(/\s+/).length, 0);
+}
+
+function formatEditionDate(value, style = 'short') {
+  const date = new Date(value);
+  if (style === 'ticker') {
+    const day = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Asia/Shanghai' }).format(date).toUpperCase();
+    const stamp = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Shanghai' }).format(date).replaceAll('-', '.');
+    return `${stamp} · ${day}`;
+  }
+  return new Intl.DateTimeFormat('en-US', { month: style === 'long' ? 'long' : 'short', day: 'numeric', year: 'numeric', timeZone: 'Asia/Shanghai' }).format(date).toUpperCase();
+}
+
+function findWordData(word) {
+  return dictionary[word] || catalog.articles.map(item => item.dictionary?.[word]).find(Boolean);
+}
+
+function renderEdition() {
+  if (!article) return;
+  const words = articleWordCount();
+  const issue = String(article.issue).padStart(3, '0');
+  $('#gateEdition').textContent = `DAILY ENGLISH · ISSUE ${issue}`;
+  $('#tickerDate').textContent = formatEditionDate(article.publishAt, 'ticker');
+  $('#tickerCategory').textContent = article.category;
+  $('#tickerDuration').textContent = `约 ${article.readingMinutes} 分钟`;
+  $('#homeSource').textContent = article.source;
+  $('#homeTopic').textContent = article.topic;
+  $('#homeTitle').textContent = article.homeTitle;
+  $('#homeDek').textContent = article.dek;
+  $('#homeDate').textContent = formatEditionDate(article.publishAt);
+  $('#homeLevelWords').textContent = `${article.level} · ${words} WORDS`;
+  $('#homeImage').src = article.heroImage;
+  $('#homeImage').alt = article.heroImageAlt;
+  $('#homeIssue').textContent = String(article.issue).padStart(2, '0');
+  $('#homeImageCredit').textContent = article.imageCredit || article.source;
+  $('#summaryPoints').innerHTML = article.summaryPoints.map((point, index) => `<div><span class="snapshot-num">${String(index + 1).padStart(2, '0')}</span><p>${escapeHtml(point)}</p></div>`).join('');
+  $('#routeParagraphs').textContent = `${article.paragraphs.length} 段 · ${Math.max(4, Math.round(words / 130))} 分钟`;
+  $('#routeWords').textContent = `${Object.keys(dictionary).length} 个核心词组`;
+  $('#phraseTerm').textContent = article.phrase.term;
+  $('#phrasePhonetic').textContent = article.phrase.phonetic;
+  $('#phraseMeaning').textContent = article.phrase.meaning;
+  $('#phraseExample').textContent = article.phrase.example;
+  const sourceLink = $('#readerSource');
+  sourceLink.textContent = article.source;
+  sourceLink.href = article.sourceUrl || '#';
+  sourceLink.toggleAttribute('aria-disabled', !article.sourceUrl);
+  $('#readerCategory').textContent = `今日精读 · ${article.category}`;
+  $('#readerTitle').textContent = article.title;
+  $('#readerStandfirst').textContent = article.standfirst;
+  $('#readerDate').textContent = formatEditionDate(article.publishAt, 'long');
+  $('#readerWords').textContent = `${words} WORDS`;
+  $('#readerLevel').textContent = `${article.level} ADVANCED`;
+  $('#keyTakeaway').textContent = article.keyTakeaway;
+  $('#syntaxSentence').textContent = article.syntax.sentence;
+  $('#syntaxExplanation').textContent = article.syntax.explanation;
+  document.title = `${article.homeTitle} · LingoPress`;
+}
+
+function renderArchive() {
+  const archive = $('#archiveList');
+  const items = publishedArticles.map(item => {
+    const date = new Date(item.publishAt);
+    const month = new Intl.DateTimeFormat('en-US', { month: 'short', timeZone: 'Asia/Shanghai' }).format(date).toUpperCase();
+    const day = new Intl.DateTimeFormat('en-US', { day: '2-digit', timeZone: 'Asia/Shanghai' }).format(date);
+    return `<button class="archive-item" data-article-id="${escapeHtml(item.id)}"><span class="archive-date">${month}<br><b>${day}</b></span><img src="${escapeHtml(item.heroImage)}" alt=""><span class="archive-copy"><small>${escapeHtml(item.source)} · ${escapeHtml(item.category)}</small><b>${escapeHtml(item.title)}</b><em>${item.readingMinutes} min · ${escapeHtml(item.level)}</em></span><span>→</span></button>`;
+  }).join('');
+  archive.innerHTML = `${items}<div class="coming-soon"><span>07</span><p><b>下一篇将在明日 07:00 发布</b><small>内容会自动生成并准时切换，无需人工上传。</small></p><button id="notifyButton">开启提醒</button></div>`;
+}
+
+function selectArticle(id) {
+  const selected = publishedArticles.find(item => item.id === id);
+  if (!selected) return;
+  article = selected;
+  dictionary = article.dictionary || {};
+  quizzes = article.quizzes || [];
+  state.notes = localStorage.getItem(`lingopress-notes-${article.id}`) || '';
+  renderEdition();
+  renderArticle();
+  renderQuiz();
+  $('#notes').value = state.notes;
+  showView('reader');
+}
 
 async function hashKey(value) {
   const bytes = new TextEncoder().encode(value.trim().toUpperCase());
@@ -117,8 +152,10 @@ $('#accessForm').addEventListener('submit', async event => {
 
 function annotate(text) {
   const terms = Object.keys(dictionary).sort((a, b) => b.length - a.length);
+  const safeText = escapeHtml(text);
+  if (!terms.length) return safeText;
   const pattern = new RegExp(`\\b(${terms.map(escapeRegex).join('|')})\\b`, 'gi');
-  return text.replace(pattern, match => `<span class="vocab-word" data-word="${match.toLowerCase()}">${match}</span>`);
+  return safeText.replace(pattern, match => `<span class="vocab-word" data-word="${escapeHtml(match.toLowerCase())}">${match}</span>`);
 }
 
 function sentenceMarkup(text, paragraphIndex) {
@@ -131,14 +168,14 @@ function renderArticle() {
     <section class="paragraph-block" id="paragraph-${i}">
       <span class="paragraph-number">0${i + 1}</span>
       <p class="english-text">${sentenceMarkup(p.en, i)}</p>
-      <p class="translation">${p.zh}</p>
-      <div class="paragraph-note">${p.note}</div>
+      <p class="translation">${escapeHtml(p.zh)}</p>
+      <div class="paragraph-note">${escapeHtml(p.note.replace(/<\/?b>/gi, ''))}</div>
     </section>`).join('');
   $('#sectionDots').innerHTML = article.paragraphs.map((_, i) => `<button data-target="paragraph-${i}" aria-label="第 ${i + 1} 段"></button>`).join('');
 }
 
 function renderQuiz() {
-  $('#quizList').innerHTML = quizzes.map((item, i) => `<div class="quiz-question"><b>${i + 1}. ${item.q}</b><div class="quiz-options">${item.options.map((option, j) => `<label><input type="radio" name="q${i}" value="${j}"> ${option}</label>`).join('')}</div></div>`).join('');
+  $('#quizList').innerHTML = quizzes.map((item, i) => `<div class="quiz-question"><b>${i + 1}. ${escapeHtml(item.q)}</b><div class="quiz-options">${item.options.map((option, j) => `<label><input type="radio" name="q${i}" value="${j}"> ${escapeHtml(option)}</label>`).join('')}</div></div>`).join('');
 }
 
 function showView(name) {
@@ -156,20 +193,21 @@ function showToast(message) {
 }
 
 function saveWord(word) {
-  if (!dictionary[word]) return;
+  if (!findWordData(word)) return;
   if (!state.words.includes(word)) { state.words.push(word); localStorage.setItem('lingopress-words', JSON.stringify(state.words)); showToast(`已收藏 ${word}`); }
   else showToast(`${word} 已在生词本`);
   updateCounts(); showWord(word);
 }
 
 function showWord(word) {
-  const data = dictionary[word]; if (!data) return;
-  $('#wordInspector').innerHTML = `<div class="study-heading"><span>单词解析</span><small>WORD INSPECTOR</small></div><div class="word-card"><h3>${word}</h3><span class="phonetic">${data.phonetic}</span><div class="meaning">${data.meaning}</div><p class="example">${data.example}</p><button data-save-word="${word}">${state.words.includes(word) ? '✓ 已收藏' : '＋ 加入生词本'}</button></div>`;
+  const data = findWordData(word); if (!data) return;
+  $('#wordInspector').innerHTML = `<div class="study-heading"><span>单词解析</span><small>WORD INSPECTOR</small></div><div class="word-card"><h3>${escapeHtml(word)}</h3><span class="phonetic">${escapeHtml(data.phonetic)}</span><div class="meaning">${escapeHtml(data.meaning)}</div><p class="example">${escapeHtml(data.example)}</p><button data-save-word="${escapeHtml(word)}">${state.words.includes(word) ? '✓ 已收藏' : '＋ 加入生词本'}</button></div>`;
 }
 
 function renderVocabulary() {
   $('#vocabSummary').textContent = `${state.words.length} 个待复习`;
-  $('#vocabGrid').innerHTML = state.words.length ? state.words.map(word => { const d = dictionary[word]; return `<article class="vocab-card"><h3>${word}</h3><small>${d.phonetic}</small><p><b>${d.meaning}</b><br>${d.example}</p><button data-remove-word="${word}">移出生词本</button></article>`; }).join('') : '<div class="empty-state">还没有收藏的词。进入今日精读，点击带下划线的表达开始积累。</div>';
+  const cards = state.words.map(word => ({ word, data: findWordData(word) })).filter(item => item.data);
+  $('#vocabGrid').innerHTML = cards.length ? cards.map(({ word, data }) => `<article class="vocab-card"><h3>${escapeHtml(word)}</h3><small>${escapeHtml(data.phonetic)}</small><p><b>${escapeHtml(data.meaning)}</b><br>${escapeHtml(data.example)}</p><button data-remove-word="${escapeHtml(word)}">移出生词本</button></article>`).join('') : '<div class="empty-state">还没有收藏的词。进入今日精读，点击带下划线的表达开始积累。</div>';
 }
 
 function updateCounts() { $('#navWordCount').textContent = state.words.length; }
@@ -207,7 +245,11 @@ document.addEventListener('click', event => {
   if (action === 'vocabulary') showView('vocabulary');
   if (action === 'start-reading') showView('reader');
   if (action === 'quick-listen') { showView('reader'); setTimeout(() => speakFrom(0), 150); }
-  if (action === 'save-phrase') saveWord('get around');
+  if (action === 'save-phrase') saveWord(article.phrase.term.toLowerCase());
+  const archiveItem = event.target.closest('[data-article-id]');
+  if (archiveItem) selectArticle(archiveItem.dataset.articleId);
+  const sourceLink = event.target.closest('#readerSource[aria-disabled="true"]');
+  if (sourceLink) event.preventDefault();
   const word = event.target.closest('.vocab-word')?.dataset.word;
   if (word) showWord(word);
   const save = event.target.closest('[data-save-word]')?.dataset.saveWord;
@@ -218,6 +260,7 @@ document.addEventListener('click', event => {
   if (dot) document.getElementById(dot.dataset.target).scrollIntoView();
   const sentence = event.target.closest('.sentence');
   if (sentence && !word) { $$('.sentence').forEach(s => s.classList.remove('speaking')); sentence.classList.add('speaking'); speakFrom(Number(sentence.dataset.p)); }
+  if (event.target.closest('#notifyButton')) enableNotifications();
 });
 
 $$('[data-mode]').forEach(button => button.addEventListener('click', () => {
@@ -230,17 +273,44 @@ $('#speedButton').addEventListener('click', () => { const speeds = [.75, 1, 1.25
 $('#fontButton').addEventListener('click', () => $('#articleBody').classList.toggle('large-text'));
 $('#bookmarkArticle').addEventListener('click', event => { const active = event.currentTarget.textContent === '★'; event.currentTarget.textContent = active ? '☆' : '★'; showToast(active ? '已取消收藏' : '文章已收藏'); });
 $('#themeToggle').addEventListener('click', () => { document.body.classList.toggle('dark'); localStorage.setItem('lingopress-theme', document.body.classList.contains('dark') ? 'dark' : 'light'); });
-$('#notes').addEventListener('input', event => localStorage.setItem('lingopress-notes', event.target.value));
+$('#notes').addEventListener('input', event => {
+  state.notes = event.target.value;
+  localStorage.setItem(`lingopress-notes-${article.id}`, event.target.value);
+});
 $('#submitQuiz').addEventListener('click', () => {
   let score = 0; quizzes.forEach((item, i) => { const picked = $(`input[name="q${i}"]:checked`); if (picked && Number(picked.value) === item.answer) score++; });
-  const result = $('#quizResult'); result.hidden = false; result.textContent = score === 3 ? '3 / 3 · 全部正确，今日精读完成。' : `${score} / 3 · 回到原文找依据，再试一次。`; result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const result = $('#quizResult'); result.hidden = false; result.textContent = score === quizzes.length ? `${score} / ${quizzes.length} · 全部正确，今日精读完成。` : `${score} / ${quizzes.length} · 回到原文找依据，再试一次。`; result.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
-$('#notifyButton').addEventListener('click', async () => { if (!('Notification' in window)) return showToast('当前浏览器不支持通知'); const permission = await Notification.requestPermission(); showToast(permission === 'granted' ? '已开启每日更新提醒' : '未获得通知权限'); });
-$('#reviewWords').addEventListener('click', () => { if (!state.words.length) return showToast('先收藏几个词吧'); const word = state.words[Math.floor(Math.random() * state.words.length)]; const d = dictionary[word]; showToast(`${word} · ${d.meaning}`); });
+async function enableNotifications() {
+  if (!('Notification' in window)) return showToast('当前浏览器不支持通知');
+  const permission = await Notification.requestPermission();
+  showToast(permission === 'granted' ? '已开启每日更新提醒' : '未获得通知权限');
+}
+
+$('#reviewWords').addEventListener('click', () => {
+  if (!state.words.length) return showToast('先收藏几个词吧');
+  const word = state.words[Math.floor(Math.random() * state.words.length)];
+  const data = findWordData(word);
+  showToast(data ? `${word} · ${data.meaning}` : '该词条已随旧内容归档');
+});
 window.addEventListener('scroll', updateProgress, { passive: true });
 
+function schedulePublicationRefresh() {
+  const next = catalog.articles
+    .map(item => new Date(item.publishAt).getTime())
+    .filter(time => time > Date.now())
+    .sort((a, b) => a - b)[0];
+  if (!next) return;
+  const delay = Math.min(next - Date.now() + 1500, 2147483647);
+  setTimeout(() => location.reload(), delay);
+}
+
 function init() {
-  renderArticle(); renderQuiz(); createWaveform(); updateCounts();
+  if (!article) {
+    $('#gateMessage').textContent = '今日内容暂未完成发布，请稍后刷新。';
+    return;
+  }
+  renderEdition(); renderArticle(); renderQuiz(); renderArchive(); createWaveform(); updateCounts(); schedulePublicationRefresh();
   $('#notes').value = state.notes;
   if (localStorage.getItem('lingopress-theme') === 'dark') document.body.classList.add('dark');
   const today = new Date().toISOString().slice(0, 10); const last = localStorage.getItem('lingopress-last-visit');
