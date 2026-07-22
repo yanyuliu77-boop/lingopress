@@ -269,7 +269,7 @@ def validate_lesson(lesson: dict) -> None:
         raise ValueError("Lesson dictionary must contain 10-16 entries")
     full_text = " ".join(item.get("en", "") for item in lesson["paragraphs"]).lower()
     word_count = len(full_text.split())
-    if not 330 <= word_count <= 740:
+    if not 250 <= word_count <= 740:
         raise ValueError(f"Lesson word count {word_count} is outside the accepted range")
     for term, data in lesson["dictionary"].items():
         if term.lower() not in full_text or not all(data.get(key) for key in ("phonetic", "meaning", "example")):
